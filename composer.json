@@ -1,5 +1,5 @@
 {
-    "name": "khoa-le/magento-call-button",
+    "name": "khoaln/magento-call-button",
     "description": "Magento 2 Call Button",
     "require": {
         "php": "~7.0.0|~7.1.0|~7.2.0|~7.3.0|~7.4.0"

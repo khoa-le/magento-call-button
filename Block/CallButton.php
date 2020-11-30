@@ -28,9 +28,14 @@ class CallButton extends \Magento\Framework\View\Element\Template
 
     public function _toHtml()
     {
-        if($this->_dataHelper->getPosition() == 2){
-            $this->setTemplate("Khoaln_CallButton::call_button-left.phtml");
+        if($this->_dataHelper->isEnabled()){
+            if($this->_dataHelper->getPosition() == 2){
+                $this->setTemplate("Khoaln_CallButton::call_button-left.phtml");
+            }
+        }else{
+            $this->setTemplate("");
         }
+
         return parent::_toHtml();
     }
 

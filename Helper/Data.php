@@ -7,6 +7,7 @@ use Magento\Framework\App\Helper\AbstractHelper;
 
 class Data extends AbstractHelper
 {
+    const CONFIG_PATH_CALL_BUTTON_ENABLED = 'khoaln_callbutton/general/enabled';
     const CONFIG_PATH_CALL_BUTTON_LABEL_HOTLINE = 'khoaln_callbutton/general/label_hotline';
     const CONFIG_PATH_CALL_BUTTON_HOTLINE = 'khoaln_callbutton/general/hotline';
     const CONFIG_PATH_CALL_BUTTON_POSITION = 'khoaln_callbutton/general/position';
@@ -27,6 +28,11 @@ class Data extends AbstractHelper
     {
         parent::__construct($context);
         $this->_scopeConfig = $context->getScopeConfig();
+    }
+
+    public function isEnabled()
+    {
+        return $this->_getConfigValueByPath(self::CONFIG_PATH_CALL_BUTTON_ENABLED);
     }
 
     public function getLabelHotline()

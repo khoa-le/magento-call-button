@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <khoaln_callbutton>
+            <general>
+                <enable>0</enable>
+                <label_hotline>Please Call Us!</label_hotline>
+                <hotline>18001234</hotline>
+                <position>1</position>
+            </general>
+        </khoaln_callbutton>
+    </default>
+</config>

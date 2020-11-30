@@ -20,18 +20,25 @@
             <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1"
                    showInWebsite="1" showInStore="1">
                 <label>General</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
                 <field id="label_hotline" translate="label" type="text" sortOrder="40" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label>Label</label>
+                    <depends><field id="enabled">1</field></depends>
                 </field>
                 <field id="hotline" translate="label" type="text" sortOrder="40" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label>Hotline</label>
+                    <depends><field id="enabled">1</field></depends>
                 </field>
                 <field id="position" translate="label" type="select" sortOrder="40" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label>Label</label>
                     <source_model>Khoaln\CallButton\Model\Config\Source\PositionType</source_model>
+                    <depends><field id="enabled">1</field></depends>
                 </field>
             </group>
         </section>
