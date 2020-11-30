@@ -1,0 +1,24 @@
+<?php
+/** @var Khoaln\CallButton\Block\CallButton $block */
+$hotline = $block->getHotline();
+$label = $block->getLabelHotline();
+?>
+<div id="call-button" class="call-us-btn call-us-btn__left">
+    <div class="call">
+        <div class="close" onclick="document.getElementById('call-button').style.display = 'none';"></div>
+        <a href="tel:<?php echo $hotline; ?>" class="wrap">
+            <div class="img">
+                <img src="<?php echo $block->getViewFileUrl('Khoaln_CallButton::images/call-us/btn-call-us.svg') ?>"
+                     alt="call us">
+            </div>
+            <div class="text">
+                <div class="center">
+                    <div class="top"><?php echo $label ?></div>
+                    <?php echo $hotline; ?>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+

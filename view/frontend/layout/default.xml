@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer-container" htmlTag="div" htmlClass="footer">
+            <referenceContainer name="footer">
+                <block class="Khoaln\CallButton\Block\CallButton" name="footer_khoaln_call_button"
+                       template="Khoaln_CallButton::call_button.phtml" after='-'/>
+            </referenceContainer>
+        </referenceContainer>
+    </body>
+</page>
